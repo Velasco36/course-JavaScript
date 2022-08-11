@@ -20,7 +20,7 @@ function eventListeners(){
     mensaje.addEventListener('blur', validarFormulario);
 
     //Reiniciar el formulario
-    btnReset.addEventListener('submit', resetearFormulario);
+    btnReset.addEventListener('click', resetearFormulario);
 
     // enviar email
 
@@ -138,6 +138,7 @@ function enviarEmail(e){
         formulario.insertBefore(parrafo, spinner);
         setTimeout(()=>{
             parrafo.remove();
+            resetearFormulario();
         },5000);
     }, 3000);
 }
