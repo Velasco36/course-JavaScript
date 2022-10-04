@@ -19,12 +19,13 @@ export class API {
             UI.divResultado.textContent = lyrics;
             UI.headingResultado.textContent =`Letra de la cancion ${this.cancion} de ${this.artista}`;
           }else{
-            UI.divMensajes.textContent = `Letra de la cancion no existe, prueba con otra Busqueda`;
+            UI.divMensajes.innerHTML = 'La canción No existe, prueba con otra búsqueda';
             UI.divMensajes.classList.add('error');
 
             setTimeout(()=>{
                 UI.divMensajes.textContent = '';
-                UI.divMensajes.classList.add('error');
+                UI.divMensajes.classList.remove('error');
+                UI.formularioBuscar.reset();
             },3000)
         }
         })

@@ -10,7 +10,7 @@ function buscarCancion(e) {
     const cancion = document.querySelector('#cancion').value;
 
     if(artista === '' || cancion === ''){
-        UI.divMensajes.textContent = 'Error ... TOdos los campos son obligatorios';
+        UI.divMensajes.innerHTML = 'Error... Todos los campos son obligatorios';
         UI.divMensajes.classList.add('error');
         setTimeout(() => {
              UI.divMensajes.innerHTML = '';
