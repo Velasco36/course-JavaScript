@@ -1,11 +1,18 @@
 {
   "clientes": [
     {
-      "nombre": "Juan NUEVO!",
-      "email": "correo2@correo.com",
-      "telefono": "12",
-      "empresa": "12212",
-      "id": 26
+      "nombre": "miguel",
+      "email": "migue@gmail.com",
+      "telefono": "23452355432",
+      "empresa": "comodigo miguel",
+      "id": 27
+    },
+    {
+      "nombre": "alonso",
+      "email": "alonso@gmial.com",
+      "telefono": "27469436",
+      "empresa": "atenas",
+      "id": 28
     }
   ]
 }
